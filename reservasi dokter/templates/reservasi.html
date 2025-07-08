@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 style="text-align: center; margin-top: 2rem;">Formulir Reservasi</h2>
+<form method="POST" style="max-width: 500px; margin: auto;">
+  <label for="dokter_id">Pilih Dokter</label>
+  <select name="dokter_id" required>
+    {% for d in dokter %}
+    <option value="{{ d.id }}">{{ d.nama }} - {{ d.spesialis }}</option>
+    {% endfor %}
+  </select>
+
+  <label for="tanggal">Tanggal</label>
+  <input type="date" name="tanggal" required>
+
+  <label for="waktu">Waktu</label>
+  <input type="time" name="waktu" required>
+
+  <button type="submit" class="btn">Kirim Reservasi</button>
+</form>
+{% endblock %}

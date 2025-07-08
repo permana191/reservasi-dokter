@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero">
+  <div class="hero-left">
+    <h1>Selamat datang di sistem reservasi dokter</h1>
+    <a href="{{ url_for('reservasi') }}" class="btn">Buat Reservasi</a>
+  </div>
+  <div class="hero-right">
+    <img src="{{ url_for('static', filename='dokter.jpg') }}" alt="Dokter">
+  </div>
+</div>
+
+<div class="menu-boxes">
+  <div class="box">
+    <h3>Daftar Dokter</h3>
+    <p>Lihat informasi tentang dokter</p>
+  </div>
+  <div class="box">
+    <h3>Lihat Reservasi</h3>
+    <p>Lihat riwayat reservasi anda</p>
+  </div>
+  <div class="box">
+    <h3>Butuh Bantuan?</h3>
+    <p>+6285174296675</p>
+  </div>
+</div>
+
+<h2 style="text-align:center; color:#1f2e4d;">Pelayanan terbaik untuk kenyamanan anda</h2>
+{% endblock %}

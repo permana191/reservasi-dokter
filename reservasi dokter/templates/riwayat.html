@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 style="text-align: center; margin-top: 2rem;">Riwayat Reservasi Anda</h2>
+<table style="margin: auto; margin-top: 2rem; border-collapse: collapse;">
+  <tr>
+    <th>Dokter</th>
+    <th>Tanggal</th>
+    <th>Waktu</th>
+  </tr>
+  {% for r in reservasi %}
+  <tr>
+    <td>{{ r.dokter_id }}</td>
+    <td>{{ r.tanggal }}</td>
+    <td>{{ r.waktu }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

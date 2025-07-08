@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 style="text-align:center;">Daftar Dokter</h2>
+
+<div class="card-container">
+  {% for d in dokter %}
+    <div class="card">
+      <img src="{{ url_for('static', filename='dokter_foto/' + d.foto) }}" alt="Foto {{ d.nama }}">
+      <h3>{{ d.nama }}</h3>
+      <p><strong>Spesialis:</strong> {{ d.spesialis }}</p>
+      <p><strong>Jadwal:</strong> {{ d.jadwal }}</p>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

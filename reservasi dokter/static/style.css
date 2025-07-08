@@ -1,0 +1,194 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #e9fdf3;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  background-color: #6a0dad;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== Hero Section (Index) ========== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #c6f4d5, #61cf8b);
+  flex-wrap: wrap;
+}
+
+.hero-left h1 {
+  color: #1f2e4d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #30ba66;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-right img {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* ========== Menu Boxes (Index) ========== */
+.menu-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 1rem;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 25%;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+  color: #1f2e4d;
+}
+
+/* ========== Dokter Cards ========== */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 20px;
+  color: #1f2e4d;
+}
+
+.card p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* ========== Forms (Login/Register/Reservasi) ========== */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #30ba66;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #28a45c;
+}
+
+/* ========== Tabel Riwayat ========== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #6a0dad;
+  color: white;
+}
